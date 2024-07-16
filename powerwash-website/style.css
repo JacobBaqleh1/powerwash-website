@@ -1,0 +1,119 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.container {
+  width: 100%;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+nav {
+  display: flex;
+  height: 5rem;
+  overflow: hidden;
+  background-color: #ffffff;
+  position: relative;
+}
+#navLinks {
+  display: none;
+}
+#myLinks {
+  display: none;
+  z-index: 1000;
+  position: fixed;
+  width: 100%;
+}
+#myLinks a {
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+  background-color: black;
+}
+#bookWashBtn {
+  padding: 10px 20px;
+  background-color: black;
+  color: white;
+  text-decoration: none;
+  border-radius: 50px;
+  text-align: center;
+  line-height: 1;
+  border: 2px solid black;
+}
+.icon {
+  display: block;
+  position: absolute;
+  right: 2rem;
+  top: 0;
+  height: 5rem;
+  width: 5rem;
+  background-color: white;
+  border: none;
+}
+.bars {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+  width: 2rem;
+}
+
+#logo-div {
+  height: 5rem;
+}
+#logo {
+  height: 5rem;
+}
+.hero {
+  display: flex;
+}
+
+@media (min-width: 475px) {
+  .container {
+    max-width: 475px;
+  }
+}
+@media (min-width: 640px) {
+  .container {
+    max-width: 640px;
+  }
+}
+@media (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+  #navLinks {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+  }
+  .link {
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    font-size: large;
+  }
+  .icon {
+    display: none;
+  }
+}
+@media (min-width: 1024px) {
+  .container {
+    max-width: 1024px;
+  }
+}
+@media (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
+  }
+}
+@media (min-width: 1536px) {
+  .container {
+    max-width: 1536px;
+  }
+}

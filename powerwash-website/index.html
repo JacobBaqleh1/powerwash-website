@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Pwer Wash Co.</title>
+  </head>
+  <body>
+    <!-- this is going to contain the enitre page -->
+    <main>
+      <nav class="container">
+        <!-- dividing the navbar to have logo be 1/3 and the rest is 2/3 -->
+        <!-- logo div -->
+        <div id="logoDiv">
+          <img
+            id="logo"
+            src="C:\Users\jacob\Onedrive\Desktop\projects\powerwash\assets\powerwash-logo.jpg"
+            alt="company logo"
+          />
+        </div>
+        <!-- other nav buttons div -->
+        <div id="navLinks">
+          <a class="link" href="#">Home</a>
+          <a class="link" href="#">About</a>
+          <a class="link" href="#">Services</a>
+         <div> <a id="bookWashBtn" href="#">Book A Wash</a></div>
+        </div>
+        <!-- hamburger menu -->
+        <button class="icon" onclick="toggleNav()">
+          <img class="bars" alt="navigation menu" src="C:\Users\jacob\Onedrive\Desktop\projects\powerwash\assets\hamburger-2-svgrepo-com.svg"></img>
+        </button>
+      </nav>
+      <!-- mobile nav links -->
+      
+        <div id="myLinks">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Book A Wash</a></li>
+          </ul>
+        </div>
+      
+      <!-- first section 'hero section' -->
+      <section class="container" id="heroBackground">
+        <!--container with left half is going to have text and right side will be an img -->
+        <div class="hero">
+          <!-- left side -->
+          <div>
+            <p>explore a variety of snapshots showcasing our services</p>
+            <p>KEEP YOUR PROPERTY CLEAN. ALWAYS</p>
+          </div>
+          <!-- right side -->
+          <div>
+            <img
+              src="C:\Users\jacob\Onedrive\Desktop\projects\powerwash\assets\man-powerwashing.jpg"
+              alt="employee powerwashing"
+            />
+          </div>
+        </div>
+        <div></div>
+      </section>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>

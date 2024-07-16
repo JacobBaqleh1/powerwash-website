@@ -9,7 +9,7 @@
   <body>
     <!-- this is going to contain the enitre page -->
     <main>
-      <nav>
+      <nav class="container">
         <!-- dividing the navbar to have logo be 1/3 and the rest is 2/3 -->
         <!-- logo div -->
         <div id="logoDiv">
@@ -21,12 +21,10 @@
         </div>
         <!-- other nav buttons div -->
         <div id="navLinks">
-          <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Book A Wash</a></li>
-          </ul>
+          <a class="link" href="#">Home</a>
+          <a class="link" href="#">About</a>
+          <a class="link" href="#">Services</a>
+         <div> <a id="bookWashBtn" href="#">Book A Wash</a></div>
         </div>
         <!-- hamburger menu -->
         <button class="icon" onclick="toggleNav()">
@@ -45,9 +43,9 @@
         </div>
       
       <!-- first section 'hero section' -->
-      <section>
+      <section class="container" id="heroBackground">
         <!--container with left half is going to have text and right side will be an img -->
-        <div>
+        <div class="hero">
           <!-- left side -->
           <div>
             <p>explore a variety of snapshots showcasing our services</p>

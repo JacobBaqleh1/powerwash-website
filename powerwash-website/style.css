@@ -74,9 +74,9 @@ nav {
 }
 .hero {
   display: flex;
-  border: solid 7px black;
+  border: solid 0.1rem black;
   border-radius: 4%;
-  margin: 4rem;
+  margin: 0.8rem;
   background-color: white;
   justify-content: space-evenly;
 }
@@ -89,6 +89,9 @@ nav {
 }
 #heroLeft {
   width: 100%;
+}
+#heroLeftSubText {
+  display: none;
 }
 #heroRight {
   width: 100%;
@@ -126,6 +129,9 @@ nav {
   }
   .icon {
     display: none;
+  }
+  #heroLeftSubText {
+    display: block;
   }
 }
 @media (min-width: 1024px) {

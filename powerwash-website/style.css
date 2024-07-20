@@ -79,6 +79,7 @@ nav {
   margin: 0.8rem;
   background-color: white;
   justify-content: space-evenly;
+  flex-direction: column;
 }
 #heroBackground {
   border: solid 3px;

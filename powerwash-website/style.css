@@ -4,8 +4,7 @@
 }
 .container {
   width: 100%;
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
+
   margin-left: auto;
   margin-right: auto;
 }
@@ -73,12 +72,12 @@ nav {
   height: 5rem;
 }
 .hero {
-  display: flex;
+  display: none;
   border: solid 0.1rem black;
   border-radius: 4%;
   margin: 0.8rem;
   background-color: white;
-  justify-content: space-evenly;
+
   flex-direction: column;
 }
 #heroBackground {
@@ -87,18 +86,29 @@ nav {
   background-image: url(https://washh.com/wp-content/uploads/2019/08/How-To-Pressure-Wash-A-Deck-And-Patio-The-Right-Way.jpg);
   background-size: cover;
   background-position: center;
+  height: 50vh;
 }
 #heroLeft {
   width: 100%;
+  height: 10rem;
 }
 #heroLeftSubText {
   display: none;
 }
+#heroLeftText {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+}
 #heroRight {
   width: 100%;
+  height: 10rem;
+  overflow: hidden;
+  position: relative;
 }
 #heroRightImg {
   width: 100%;
+  position: absolute;
+  height: 100%;
 }
 
 @media (min-width: 475px) {

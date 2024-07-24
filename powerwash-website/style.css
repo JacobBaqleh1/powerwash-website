@@ -1,11 +1,11 @@
 * {
   margin: 0;
   padding: 0;
+  font-family: "Roboto", sans-serif;
 }
 .container {
   width: 100%;
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
+
   margin-left: auto;
   margin-right: auto;
 }
@@ -15,6 +15,7 @@ nav {
   overflow: hidden;
   background-color: #ffffff;
   position: relative;
+  align-items: center;
 }
 #navLinks {
   display: none;
@@ -48,15 +49,23 @@ nav {
   background-color: white;
   color: black;
 }
+#mobileBookWashBtn {
+  position: absolute;
+  right: 7rem;
+  border: solid black 0.2rem;
+  border-radius: 10%;
+  padding: 0.7rem;
+  background-color: black;
+  color: white;
+}
 .icon {
   display: block;
-  position: absolute;
-  right: 2rem;
-  top: 0;
-  height: 5rem;
+  position: fixed;
+  right: 0;
+  height: 3rem;
   width: 5rem;
   background-color: white;
-  border: none;
+  border: solid black 1px;
 }
 .bars {
   display: block;
@@ -73,32 +82,118 @@ nav {
   height: 5rem;
 }
 .hero {
-  display: flex;
+  display: none;
   border: solid 0.1rem black;
   border-radius: 4%;
   margin: 0.8rem;
   background-color: white;
-  justify-content: space-evenly;
+
   flex-direction: column;
 }
 #heroBackground {
-  border: solid 3px;
-  border-radius: 4%;
+  border-bottom: solid 3px;
+  border-top: solid black 1px;
+  border-radius: 8%;
   background-image: url(https://washh.com/wp-content/uploads/2019/08/How-To-Pressure-Wash-A-Deck-And-Patio-The-Right-Way.jpg);
   background-size: cover;
   background-position: center;
+  height: 50vh;
 }
 #heroLeft {
   width: 100%;
+  height: 10rem;
 }
 #heroLeftSubText {
   display: none;
 }
+#heroLeftText {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+}
 #heroRight {
   width: 100%;
+  height: 10rem;
+  overflow: hidden;
+  position: relative;
 }
 #heroRightImg {
   width: 100%;
+  position: absolute;
+  height: 100%;
+}
+.title {
+  background-color: #154c79;
+  color: white;
+  background-color: #154c79;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.2rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  text-shadow: 0.1rem 0.5rem 0.5rem black;
+}
+.employeeBtn {
+  display: block;
+  width: 89%;
+  height: 4rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #eeda2f;
+}
+.employeeBtn span {
+  font-size: large;
+  font-weight: 700;
+  text-shadow: 0.1rem 0.1rem 0.3rem black;
+  color: white;
+}
+.serviceTitle {
+  font-weight: 700;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: 8rem;
+  font-size: 3.4rem;
+  transform: scaleY(2);
+}
+.serviceTitle span {
+  transform: scaleY(0.5);
+}
+.serviceTitle img {
+  height: 5rem;
+  width: 5rem;
+}
+.services {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: #154c79;
+}
+.services ul {
+  margin-left: auto;
+  margin-right: auto;
+  align-items: flex-start;
+  font-size: 2rem;
+  justify-content: space-evenly;
+  display: flex;
+  flex-direction: column;
+  height: 50%;
+  position: sticky;
+  top: 5rem;
+  background-color: #154c79;
+  color: white;
+  text-shadow: 0.2rem 0.2rem 0.3rem black;
+  list-style-type: none;
+}
+.serviceImgs {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+}
+.serviceImg {
+  width: 100%;
+  height: auto;
 }
 
 @media (min-width: 475px) {

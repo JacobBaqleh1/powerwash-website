@@ -187,6 +187,27 @@ nav {
   text-shadow: 0.2rem 0.2rem 0.3rem black;
   list-style-type: none;
 }
+.services li:first-child {
+  margin-right: auto;
+  text-decoration: underline;
+  margin-left: auto;
+}
+.services li {
+  gap: 1rem;
+}
+.services a {
+  margin-left: auto;
+  text-decoration: none;
+  color: inherit;
+  background-color: #eeda2f;
+  border: 1px white solid;
+  margin-right: auto;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin-top: 2rem;
+}
 .serviceImgs {
   display: grid;
   grid-template-rows: 1fr 1fr;
